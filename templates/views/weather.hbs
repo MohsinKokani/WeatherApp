@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>HeaderLinks}}
+    <title>Weather</title>
+</head>
+
+<body data-bs-theme="dark">
+    {{>Navbar}}
+    <div class="container-fluid main_content">
+        <div class="col-sm-6 col-10 mx-auto row">
+            <div class="input-group mb-5 mt-4">
+                <input type="text" class="form-control form-control-lg fs-3" id="inputField" placeholder="City Name..."
+                    aria-label="City Name..." aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary fs-4 search-btn" type="button"
+                    id="button-addon2">Search</button>
+            </div>
+        </div>
+        <div class="weatherbox">
+            <div class="left-weather-box w3-quarter">
+                <div>
+                    <h2 class="h2_left">Week</h2>
+                    <p class="p_left">Date</p>
+                    <p class="p_left">City Name</p>
+                </div>
+                <img src="https://cdn.weatherapi.com/weather/64x64/day/176.png" alt="Status">
+                <div>
+                    <h1 class="h1_left">Deg°C</h1>
+                    <h3 class="h3_left">Comment</h3>
+                </div>
+            </div>
+            <div class="right-weather-box center w3-quarter">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>HUMIDITY</th>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <th>WIND</th>
+                            <td>0km/h</td>
+                        </tr>
+                        <tr>
+                            <th>Wind Direction</th>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

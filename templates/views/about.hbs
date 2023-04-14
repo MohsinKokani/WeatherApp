@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>HeaderLinks}}
+    <title>HomeHbs</title>
+</head>
+
+<body data-bs-theme="dark">
+    {{>Navbar}}
+    <div class="container-fluid main_content">
+        <div class="col-sm-10 col-12 mx-auto row">
+            <div class="col-sm-6 col-12 main_content_right">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/myImg.jpeg" class="d-block myImg m-auto" style="width: 53%;" alt="...">
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-6 col-12 mb-2 main_content_left">
+                <p>Welcome to Weather App</p>
+                <h1>I am a  <span>MERN</span> stack Developer</h1>
+                <a href="https://github.com/mohsinkokani" target="_blank"><button class="check-now-btn">View My GitHub?</button></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        Made With <span>❤️</span> by Mohsin
+    </footer>
+    <script>
+        function toggleDarkMode() {
+            let bodyTag = document.getElementsByTagName('body')[0];
+            let DarkModeText = document.getElementById('DarkModeText');
+            if (bodyTag.getAttribute('data-bs-theme') == 'dark') {
+                bodyTag.setAttribute('data-bs-theme', 'light');
+                DarkModeText.innerText = 'Dark Mode';
+            } else {
+                bodyTag.setAttribute('data-bs-theme', 'dark');
+                DarkModeText.innerText = 'Light Mode';
+            }
+        }
+    </script>
+</body>
+
+</html>
