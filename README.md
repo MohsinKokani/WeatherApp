@@ -11,7 +11,7 @@ A simple weather app built using Express.js, Bootstrap 5.3, and Weather API.
 ## Installation
 1. Clone the repository
 ```
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/MohsinKokani/WeatherApp.git
 ```
 2. Install dependencies
 ```
